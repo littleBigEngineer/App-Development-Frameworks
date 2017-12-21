@@ -1,5 +1,0 @@
-INSERT INTO equipment VALUES ('Sword','Wooden',20 ,30 ,40 ,100 ,1 ,5 ,200 ,0, 0),
-('Shield','Wooden',50 ,10 ,20 ,100 ,1 ,4 ,150 ,0, 0),('Armour','Leather',50 ,0 ,10 ,100 ,1 ,5 ,100 ,0, 0), ('Horse','Leather',50 ,0 ,10 ,100 ,1 ,5 ,100 ,1, 100);
-
-INSERT INTO shop VALUES ('Bow & Arrow','Wooden',20 ,30 ,40 ,100 ,1 ,5 ,200 ,0), ('Crossbow','Wooden',20 ,30 ,40 ,100 ,1 ,5 ,200 ,0), 
-('Rocket Launcher','Wooden',20 ,30 ,40 ,100 ,1 ,5 ,200 ,0);

@@ -1,5 +1,0 @@
-package com.kylar.Repo;
-
-public class JdbcShopRepo implements ShopRepo{
-
-}
