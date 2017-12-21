@@ -1,0 +1,68 @@
+package com.kylar.Repo;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
+
+import com.kylar.Domain.Equipment;
+import com.kylar.Domain.ShopItem;
+import com.kylar.RowMapper.EquipmentMapper;
+
+@Repository
+public class JdbcEquipmentRepo implements EquipmentRepo {
+	private JdbcTemplate jdbcTemplate;
+
+	@Autowired
+	public JdbcEquipmentRepo(JdbcTemplate jdbcTemplate) {
+		this.jdbcTemplate = jdbcTemplate;
+	}
+
+	@Override
+	public Equipment getEquipment(String item) {
+		String sql = "SELECT * FROM equipment WHERE item = ?";
+		Equipment equipment = jdbcTemplate.queryForObject(sql, new Object[] { item }, new EquipmentMapper());
+		return equipment;
+	}
+
+	@Override
+	public void updateEqipmentInfo(Equipment equipment) {
+		String sql = "UPDATE artists SET fullName = ?, gender = ? WHERE id = ?";
+		jdbcTemplate.update(sql, new Object[] { artist.getName(),
+			artist.getGender(), artist.getId()} );
+	}
+
+	
+	@Override
+	public void removeEquipment(Equipment equipment) {
+		String sql = "DELETE FROM equipment WHERE item = ?";
+		jdbcTemplate.update(sql, new Object[] { equipment.getItem() });
+	}
+
+	@Override
+	public List<Equipment> getAllEquipment() {
+		String sql = "SELECT * FROM equipment";
+		return jdbcTemplate.query(sql, new EquipmentMapper());
+	}
+
+	@Override
+	public List<Equipment> getAllSellable() {
+		String sql = "SELECT * FROM equipment WHERE beSold = 1";
+		return jdbcTemplate.query(sql, new EquipmentMapper());
+	}
+
+	@Override
+	public List<Equipment> getAllUpgradable() {
+		String sql = "SELECT * FROM equipment WHERE currentLevel < 5";
+		return jdbcTemplate.query(sql, new EquipmentMapper());
+	}
+
+	@Override
+	public void addEquipment(ShopItem shopItem) {
+		String sql = "INSERT INTO equipment (item, protection, damage, durability, currentLevel, priceForUpgrade, beSold, salePrice) VALUES (?,?,?,?,?,?,?,?)";
+		jdbcTemplate.update(sql, 
+			new Object[] {shopItem.getItem(),shopItem.getProtection(), shopItem.getDamage(), shopItem.getDurability(), shopItem.getCurrentLevel(), shopItem.getPriceForUpgrade(), shopItem.getSale(), shopItem.getSalePrice()} );
+
+	}
+}

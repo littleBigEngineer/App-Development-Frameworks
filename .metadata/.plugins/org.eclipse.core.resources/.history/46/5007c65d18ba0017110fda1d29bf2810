@@ -1,0 +1,8 @@
+package com.kylar.Domain;
+
+public class Shop {
+	String item;
+	int quantity, price, level;
+}
+
+'Bow & Arrow', 3, 385, 1

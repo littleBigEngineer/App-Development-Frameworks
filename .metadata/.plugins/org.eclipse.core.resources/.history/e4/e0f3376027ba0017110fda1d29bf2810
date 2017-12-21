@@ -1,0 +1,22 @@
+
+-- (item, material, protection, damage, maxDamage, durability, currentLevel, maxLevel, priceForUpgrade, beSold, salePrice)
+INSERT INTO equipment VALUES ('Sword','Wooden',20 ,30 ,40 ,100 ,1 ,5 ,200 ,0, 0),
+('Shield','Wooden',50 ,10 ,20 ,100 ,1 ,4 ,150 ,0, 0),('Armour','Leather',50 ,0 ,10 ,100 ,1 ,5 ,100 ,0, 0), 
+('Horse', 'White', 2, 2, 2, 3, 2, 2, 2, 1, 100);
+
+-- (item, material, protection, damage, maxDamage, durability, currentLevel, maxLevel, priceForUpgrade, stock, salePrice, price)
+INSERT INTO shop VALUES ('Bow and Arrow', 'Wooden', 10, 25, 105, 100, 1, 3, 360, 2, 75, 380);
+
+/*
+ * 
+ * CREATE TABLE equipment(item varchar(100) NOT NULL,material varchar(10) NOT NULL,protection int(3) NOT NULL,damage int(3) NOT NULL,maxDamage int(3) NOT NULL,
+ * durability int(3) NOT NULL,currentLevel int(1) NOT NULL,maxLevel int(1) NOT NULL,priceForUpgrade int(4) NOT NULL,beSold int(1) NOT NULL, salePrice int(3) NOT NULL,
+ * PRIMARY KEY (item));
+ * 
+ * CREATE TABLE shop(item varchar(100) NOT NULL, 	material varchar(10) NOT NULL, 	protection int(3) NOT NULL,	damage int(3) NOT NULL,	maxDamage int(3) NOT NULL,
+ * durability int(3) NOT NULL, 	currentLevel int(1) NOT NULL,	maxLevel int(1) NOT NULL,	priceForUpgrade int(4) NOT NULL,	stock int(1) NOT NULL,
+ * salePrice int(3) NOT NULL,	price int(3) NOT NULLPRIMARY KEY (item));
+ * 
+ * CREATE TABLE player(firstName varchar(100) NOT NULL,lastName varchar(100) NOT NULL,ign varchar(100) NOT NULL,balance int(10) NOT NULL,health int(3) NOT NULL,
+ * PRIMARY KEY (ign));
+ */ 

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.springframework.boot.CommandLineRunner"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="javax.swing.tree.RowMapper"/>
+<fullyQualifiedTypeName name="javax.sql.DataSource"/>
+<fullyQualifiedTypeName name="com.kylar.Domain.PlayerDao"/>
+<fullyQualifiedTypeName name="com.kylar.Domain.Player"/>
+<fullyQualifiedTypeName name="org.springframework.jdbc.core.JdbcTemplate"/>
+<fullyQualifiedTypeName name="com.kylar.RowMapper.PlayerMapper"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+<fullyQualifiedTypeName name="com.kylar.Repo.PlayerRepo"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="com.kylar.Repo.ShopRepo"/>
+<fullyQualifiedTypeName name="org.springframework.jdbc.core.RowMapper"/>
+<fullyQualifiedTypeName name="com.kylar.RowMapper.ShopItemMapper"/>
+<fullyQualifiedTypeName name="com.kylar.Domain.ShopItem"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="ch.qos.logback.core.net.SyslogOutputStream"/>
+</qualifiedTypeNameHistroy>

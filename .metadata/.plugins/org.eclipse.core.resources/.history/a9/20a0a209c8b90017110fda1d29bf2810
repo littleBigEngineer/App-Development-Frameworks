@@ -1,0 +1,18 @@
+package com.kylar.Domain;
+
+public class Equipment {
+	String material, item;
+	int id, protection, damage, maxDamage, durability, currentLevel, maxLevel, priceForUpgrade;
+	
+	
+	id int(1) NOT NULL AUTO_INCREMENT,
+	item varchar(100) NOT NULL,
+	material varchar(10) NOT NULL,
+	protection int(3) NOT NULL,
+	damage int(3) NOT NULL,
+	maxDamage int(3) NOT NULL,
+	durability int(3) NOT NULL,
+	currentLevel int(1) NOT NULL,
+	maxLevel int(1) NOT NULL,
+	priceForUpgrade int(4) NOT NULL,
+}

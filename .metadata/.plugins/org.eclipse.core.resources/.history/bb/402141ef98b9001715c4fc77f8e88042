@@ -1,0 +1,9 @@
+package com.kylar.Repo;
+import com.kylar.Domain.*;
+
+public interface PlayerRepo {	
+	public Player getPlayer();
+	public void updatePlayerInfo(Player player);
+	public int[] endOfRoundInfo(Player player);
+	public void addPlayer(String firstName, String lastName, String ign, int balance, int health);
+}

@@ -1,0 +1,5 @@
+package com.kylar.RowMapper;
+
+public class ShopItemMapper implements RowMapper<ShopItem> {
+
+}

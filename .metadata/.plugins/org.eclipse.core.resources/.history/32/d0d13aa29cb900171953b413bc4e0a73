@@ -1,0 +1,64 @@
+package com.kylar.Service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.kylar.Domain.Player;
+import com.kylar.Repo.PlayerRepo;
+
+@Service
+public class PlayerServiceImpl implements PlayerService {
+
+	PlayerRepo PlayerRepo;
+	
+	@Autowired
+	public PlayerServiceImpl(PlayerRepo PlayerRepo) {
+		this.PlayerRepo = PlayerRepo;
+	}
+
+	@Override
+	public void save(Player Player) {
+		PlayerRepository.save(Player);
+	}
+
+	@Override
+	public Player get(int id) {
+		return PlayerRepository.get(id);
+	}
+
+	@Override
+	public List<Player> findAll() {
+		return PlayerRepository.findAll();
+	}
+
+	@Override
+	public void remove(Player Player) {
+		PlayerRepository.remove(Player);
+	}
+
+	@Override
+	public Player getPlayer() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void updatePlayerInfo(Player player) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public int[] endOfRoundInfo(Player player) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void addPlayer(Player player) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
+

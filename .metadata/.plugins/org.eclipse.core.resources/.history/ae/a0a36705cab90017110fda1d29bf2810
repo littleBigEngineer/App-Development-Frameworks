@@ -1,0 +1,11 @@
+package com.kylar.Repo;
+
+import com.kylar.Domain.Equipment;
+
+public class EquipmentRepo {
+	Equipment getEquipment(int id);
+	void updatePlayerInfo(Player player);
+	int[] endOfRoundInfo(Player player);
+	void addPlayer(Player player);
+}
+

@@ -1,0 +1,29 @@
+package com.kylar.RowMapper;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import org.springframework.jdbc.core.RowMapper;
+
+import com.kylar.Domain.Equipment;
+import com.kylar.Domain.Player;
+
+public class EquipmentMapper implements RowMapper<Equipment>{
+	@Override
+	public Equipment mapRow(ResultSet rs, int i) throws SQLException {
+		return new Equipment(rs.getInt("id"), rs.getString("item"), rs.getString("material"), 
+				rs.getInt("protection"), rs.getInt("damage"), rs.getInt("maxDamage"), rs.getInt("durability"),
+				rs.getInt("currentLevel"), rs.getInt("maxLevel"));
+	}
+}
+
+id int(1) NOT NULL AUTO_INCREMENT,
+item varchar(100) NOT NULL,
+material varchar(10) NOT NULL,
+protection int(3) NOT NULL,
+damage int(3) NOT NULL,
+maxDamage int(3) NOT NULL,
+durability int(3) NOT NULL,
+currentLevel int(1) NOT NULL,
+maxLevel int(1) NOT NULL,
+priceForUpgrade int(4) NOT NULL,

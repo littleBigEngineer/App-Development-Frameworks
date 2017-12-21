@@ -1,0 +1,6 @@
+package com.kylar.Domain;
+
+public class Equipment {
+	String material, item;
+	int id, protection, damage, maxDamage, durability, currentLevel, maxLevel, priceForUpgrade;
+}

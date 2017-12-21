@@ -1,0 +1,10 @@
+package com.kylar.Repo;
+
+import com.kylar.Domain.Equipment;
+
+public interface EquipmentRepo {
+	Equipment getEquipment(int id);
+	void updateEqipmentInfo(Player player);
+	void removeEquipment
+}
+

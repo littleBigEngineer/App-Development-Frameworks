@@ -1,0 +1,7 @@
+package com.kylar.Domain;
+
+public class Shop {
+	String item;
+	int quantity, price, level;
+}
+

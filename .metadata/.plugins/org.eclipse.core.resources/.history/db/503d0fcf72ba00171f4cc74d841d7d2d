@@ -1,0 +1,13 @@
+
+-- (item, material, protection, damage, durability, currentLevel, priceForUpgrade, beSold, salePrice)
+INSERT INTO equipment VALUES ('Sword','Wooden',20 ,30 ,100 ,1 ,200 ,0, 100),
+('Shield','Wooden',20 ,30 ,100 ,1 ,200 ,0, 100),('Armour','Leather',20 ,30 ,100 ,1 ,200 ,0, 100), 
+('Horse', 'White', 20 ,30 ,100 ,1 ,200 ,1, 100);
+
+-- (item, material, protection, damage, maxDamage, durability, currentLevel, maxLevel, priceForUpgrade, beSold, salePrice, stock, 
+-- price)
+INSERT INTO shop VALUES 
+('Longbow','Wooden',20 ,30 ,100 ,1 ,200 ,0, 100, 75, 380),
+('Shiv','Wooden',20 ,30 ,100 ,1 ,200 ,0, 100, 75, 380),
+('Crossbow','Wooden',20 ,30 ,100 ,1 ,200 ,0, 100, 75, 380),
+('Crossbow','Wooden',20 ,30 ,100 ,1 ,200 ,0, 100, 75, 380);

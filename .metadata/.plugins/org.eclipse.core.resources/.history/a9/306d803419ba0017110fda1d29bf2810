@@ -1,0 +1,19 @@
+# item, material, protection, damage, maxDamage, durability, currentLevel, maxLevel, priceForUpgrade
+INSERT INTO equipment VALUES ('Sword','Wooden',20 ,30 ,40 ,100 ,1 ,5 ,200 ,0),
+('Shield','Wooden',50 ,10 ,20 ,100 ,1 ,4 ,150 ,0),('Armour','Leather',50 ,0 ,10 ,100 ,1 ,5 ,100 ,0);
+
+# item, material, protection, damage, maxDamage, durability, currentLevel, maxLevel, priceForUpgrade, stock, price
+INSERT INTO shop VALUE ('Bow & Arrow','Wooden',20 ,30 ,40 ,100 ,1 ,5 ,200 ,0), ('Crossbow', 1, 544, 2), ('Rocket Launcher', 1, 900, 1);
+
+
+item varchar(100) NOT NULL,
+	material varchar(10) NOT NULL,
+	protection int(3) NOT NULL,
+	damage int(3) NOT NULL,
+	maxDamage int(3) NOT NULL,
+	durability int(3) NOT NULL,
+	currentLevel int(1) NOT NULL,
+	maxLevel int(1) NOT NULL,
+	priceForUpgrade int(4) NOT NULL,
+	stock int(1) NOT NULL,
+	price int(3) NOT NULL,
